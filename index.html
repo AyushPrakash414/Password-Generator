@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -16,9 +17,15 @@
         </div>
         <div class="inputBar">
             <input type="text" placeholder="Password" id="password">
+           <div id="copyButton">
+            <button id="copyBtn" onclick="copyText()"> <i class="fas fa-copy"></i></button>
+           </div>
         </div>
         <div class="btn">
             <button onclick="createPassword()">Generate Password</button>
+        </div>
+        <div class="variableLenght" >
+            <input type="text" id="variable" placeholder="Desired Lenght(optional)">
         </div>
     </div>
     <script src="index.js"></script>
